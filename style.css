@@ -1,0 +1,186 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: Helvetica;
+}
+
+.main{
+	width: 100%;
+}
+
+nav{
+	width: 100%;
+	background-color: #13CAED;
+	height: 80px;
+	line-height: 80px;
+	display: flex;
+	justify-content: space-between;	
+}
+
+/*Main Image Index*/
+.main-image{
+	min-height:100vh;
+	width:100%;
+	background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(Images/FryeBabysOutside.jpg);
+	background-position: center;
+	background-size:cover;
+	position:relative;
+	padding-top:40px;
+}
+
+/*Temporary Logo*/
+.fbslogo a{
+	font-style: italic;
+	font-size: 35px;
+	color: #ff33cc;
+	font-weight: bold;
+	padding-left: 100px;
+}
+
+/*Navigation Menu*/
+a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+	transition: 0.6s all ease;
+}
+
+ul{
+	margin: 0px;
+	padding-right: 100px;
+}
+
+ul li{
+	float: left;
+	padding: 0px 20px;
+	list-style: none;
+}
+
+/*Hover Function for Navigation Text*/
+ul li a:hover{
+	color:#ff33cc;;
+}
+
+/*Menu Page*/
+
+/*About Page*/
+
+/*Contact Page*/
+
+.contact-me{
+	width:80%;
+	margin:auto;
+}
+
+.contact-col{
+	flex-basis:48%;
+	margin-bottom:30px;
+}
+
+.contact-col div{
+	display:flex;
+	align-items:center;
+	margin-bottom:40px;
+}
+
+.contact-col div .fa{
+	font-size:28px;
+	color:#6495ED;
+	margin:10px;
+	margin-right:30px;
+}
+
+.contact-col div p{
+	padding:0;
+}
+
+.contact-col div h5{
+	font-size:20px;
+	margin-bottom:5px;
+	color:#555;
+}
+
+.contact-col input, .contact-col textarea{
+	width:100%;
+	padding:15px;
+	margin-bottom:17px;
+	outline:none;
+	border:1px solid #ccc;
+	box-sizing:border-box;
+}
+
+.row{
+	margin-top:5%;
+	display:flex;
+	justify-content:space-between;
+}
+
+/*Main Button Design*/
+.hero-btn{
+	display:inline-block;
+	text-decoration:none;
+	color:#6495ED;
+	border:1px solid #6495ED;
+	padding:12px 34px;
+	font-size:13px;
+	background:transparent;
+	position:relative;
+	cursor:pointer;
+}
+
+.hero-btn:hover{
+	border:1px solid #6495ED;
+	background:#6495ED;
+	color:#fff;
+	transition:1s;
+}
+
+/*Other Device Format*/
+nav .fa{
+	display:none;
+	padding:20px;
+}
+
+@media(max-width:700px){
+	.text-box h1{
+		font-size:20px;
+	}
+	.nav-links ul li{
+		display:block;
+	}
+	.nav-links{
+		position:absolute;
+		background:#5283FF;
+		height:100vh;
+		width:200px;
+		top:0;
+		right:-200px;
+		text-align:left;
+		z-index:2;
+		transition:1s;
+	}
+	nav .fa{
+		display:block;
+		color:#fff;
+		margin:10px;
+		font-size:22px;
+		cursor: pointer;
+	}
+	.nav-links ul{
+		padding: 30px;
+	}
+}
+
+/*Footer*/
+.footer{
+	width:100%;
+	text-align:center;
+	padding:30px 0;
+}
+
+.icons .fa{
+	color:#6495ED;
+	margin:0 13px;
+	cursor:pointer;
+	padding:18px 0;
+}

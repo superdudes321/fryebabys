@@ -77,6 +77,12 @@ ul li a:hover{
 	margin-bottom:30px;
 }
 
+@media(max-width:700px){
+	.row {
+		flex-direction:column;
+	}
+}
+
 .contact-col div{
 	display:flex;
 	align-items:center;
